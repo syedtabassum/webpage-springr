@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task</title>
+    <!-- ...................font awesome................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- .....................font family................... -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./img/icon.png">
+</head>
+
+<body>
+ <!-- ....................header........................-->
+    <header class="white-bg">
+        <div class="logo">
+            <img width="180" src="./img/logo.png" alt="logo" />
+        </div>
+        <div class="user-icon">
+            <img src="./img/speaker.png" alt="speaker" width="50" />
+            <span class="user-icon-status"></span>
+        </div>
+        <div class="menu-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+ <!-- ....................Main dashboard........................-->
+    <main>
+        <div class="main-dashboard">
+ <!-- ..................Left menu links.......................-->
+            <div class="dashboard-links white-bg">
+                <ul>
+                    <li>
+                        <a href="javascript:rudrSwitchTab('tb_1', 'content_1');" id="tb_1" class="tabmenu active">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:rudrSwitchTab('tb_2', 'content_2');" id="tb_2" class="tabmenu"> Activity</a>
+                    </li>
+                    <li>
+                        <a href="javascript:rudrSwitchTab('tb_3', 'content_3');" id="tb_3" class="tabmenu">
+                            Wallet</a>
+                    </li>
+                    <li>
+                        <a href="javascript:rudrSwitchTab('tb_4', 'content_4');" id="tb_4" class="tabmenu"> Profile</a>
+                    </li>
+                </ul>
+            </div>
+ <!-- ....................Preview about the speaker........................-->
+
+            <div class="dashboard-preview">
+                <div class="dashoard-content white-bg">
+                    <div id="content_1" class="tabcontent">
+                        <div class="dashboard-tab-content">
+                            <div> <img src="./img/speaker.png" alt=""></div>
+                            <div class="dashboard-tabcontent">
+                                <div class="content">
+                                    <h2 class="pb-1">Iyanla Vanzant</h2>
+                                    <p class="tag pb-1">Motivational speaker</p>
+                                    <div class="rating">
+                                        <div> <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i></div>
+                                        <div>
+                                            <h5>4/5</h5>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="price">
+                                        <h3>$ 150</h3>
+                                        <h5>Per hour</h5>
+                                    </div>
+                                </div>
+                                <br>
+
+                            </div>
+
+                        </div>
+                        <div class="dashboard-tab-activity">
+                            <hr class="line">
+                            </hr>
+                            <div class="sections">
+                                <div class="follow-section">
+                                    <img src="./img/followers.png" alt="followers" class="follow" width="40">
+                                    <h4>950 Followers</h4>
+                                </div>
+                                <br>
+                                <div class="class-section">
+                                    <img src="./img/session.png" alt="session" class="session" width="40">
+                                    <h4>450 Session</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content_2" class="tabcontent" style="display: none">
+                        Content of the second tab.
+                    </div>
+                    <div id="content_3" class="tabcontent" style="display: none">
+                        Content of the 3 tab.
+                    </div>
+                    <div id="content_4" class="tabcontent" style="display: none">
+                        Content of the 4 tab.
+                    </div>
+                </div>
+ <!-- ....................user panel on right side........................-->
+
+                <div class="dashboard-reach white-bg">
+                    <div class="item">
+                        <img src="./img/shutdown.png" alt="shutdown-img" class="power-button" width="25" />
+                        <h4>Turn on/ Off chat</h4>
+                    </div>
+                    <div class="item">
+                        <img src="./img/video.png" alt="video-img" class="video" width="25" />
+                        <h4>Go Live</h4>
+                    </div>
+                    <div class="item ">
+                        <img src="./img/rupee.png" alt="rupee-img" class="rupee" width="25" />
+                        <h4>Balance</h4>
+                        <h4 class="balance">$ 1,235</h4>
+                    </div>
+                    <div class="item">
+                        <img src="./img/share-icon.png" alt="share-img" class="share-button" width="25" />
+                        <h4>Share profile</h4>
+                    </div>
+                </div>
+                <div class="more-info white-bg">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy 
+                    text ever since the 1500s, when an unknown printer took a galley 
+                    of type and scrambled it to make a type specimen book. Lorem Ipsum 
+                    is simply dummy text of the printing and typesetting industry.
+                    Lorem ipsum has been the industry’s standard dummy text ever.
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

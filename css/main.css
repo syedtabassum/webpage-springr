@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+span.user-icon-status {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(1, 211, 1);
+  position: absolute;
+  bottom: 0px;
+  left: 18px;
+}
+
+.user-icon {
+  position: relative;
+}
+.menu-icon {
+  display: none;
+}
+main {
+  margin: 20px;
+}
+
+.dashboard-links {
+  margin-right: 20px;
+}
+.main-dashboard {
+  display: flex;
+}
+.white-bg {
+  background-color: #fff;
+  box-shadow: 1px 1px 6px #ccc;
+  border-radius: 4px;
+}
+.dashboard-links {
+  width: 20%;
+  max-height: 100%;
+}
+
+.dashboard-links li {
+  list-style: none;
+}
+
+.dashboard-links img {
+  margin-right: 12px;
+}
+.dashboard-links a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #454751;
+  font-family: "Roboto", sans-serif;
+}
+
+.dashboard-links li {
+  padding: 10px 0;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.dashboard-links li:hover {
+  background-color: #595959;
+}
+.dashboard-links li:hover a {
+  color: #fff;
+}
+
+.dashboard-links li:nth-child(1) a:before {
+  content: "\f015";
+  font-family: "FontAwesome";
+  padding-right: 10px;
+}
+.dashboard-links li:nth-child(2) a:before {
+  content: "\f017";
+  font-family: "FontAwesome";
+  padding-right: 10px;
+}
+.dashboard-links li:nth-child(3) a:before {
+  content: "\f0d6 ";
+  font-family: "FontAwesome";
+  padding-right: 10px;
+}
+.dashboard-links li:nth-child(4) a:before {
+  content: "\f007";
+  font-family: "FontAwesome";
+  padding-right: 10px;
+}
+.dashboard-preview {
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  overflow-y: auto;
+  height: 80vh;
+  width: 100%;
+}
+
+.dashoard-content {
+  flex: 1 0 50%;
+  margin-right: 20px;
+}
+.tag {
+  font-weight: 400;
+  color: #7a858b;
+}
+.more-info {
+  margin-top: 10px;
+  padding: 30px;
+  font-weight: 400;
+  color: #7a7e86;
+}
+.dashboard-tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.dashboard-tab-content > h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+.dashboard-tabcontent {
+  padding-left: 20px;
+}
+
+.pb-1 {
+  padding-bottom: 10px;
+}
+.rating {
+  display: flex;
+}
+
+.rating h5 {
+  padding-left: 10px;
+}
+.rating i {
+  color: orange;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price h5 {
+  background-color: #cccccc2b;
+  padding: 6px;
+  color: #595a66;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.sections {
+  margin: 30px 0;
+}
+.sections,
+.sections > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sections > div {
+  flex-direction: row;
+}
+.sections h4 {
+  padding-left: 20px;
+}
+hr.line {
+  width: 70%;
+  margin: 0 auto;
+}
+.item {
+  display: flex;
+  background-color: #8f8d8d17;
+  align-items: center;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.dashboard-reach {
+  padding: 1rem;
+  flex: 1 0 30%;
+  cursor: pointer;
+}
+.item h4 {
+  font-weight: 400;
+  padding-left: 10px;
+}
+.video {
+  animation: blink 1s infinite ease-in-out;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+h4.balance {
+  margin-left: auto;
+  color: #29d56d;
+  font-weight: bold;
+}
+.show {
+  width: 50%;
+  position: absolute;
+}
+@media only screen and (max-width: 740px) {
+  .main-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .dashboard-links {
+    display: none;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+  }
+  .show,
+  .menu-icon {
+    display: block;
+  }
+  .dashboard-links.show {
+    height: 100vh;
+    margin: 0;
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+  }
+  main {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .dashoard-content {
+    flex: 1 1 auto;
+  }
+  .dashboard-reach {
+    flex: 1 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dashoard-content {
+    margin-right: 0;
+  }
+}
